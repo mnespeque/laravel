@@ -18,7 +18,6 @@ class CriarTabela extends Migration
             $table->string('nome');
             $table->string('sobrenome');
             $table->string('email');
-            $table->date('created_at');
 
         });
     }
