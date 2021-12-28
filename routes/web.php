@@ -11,19 +11,8 @@
 |
 */
 
-Route::get('/formulario', function () {
-    return view('welcome');
-});
+Route::get('/formulario', 'ContatoController@index');
 
+Route::post('/enviar', 'ContatoController@enviar');
 
-Route::post('/enviar', function(Illuminate\Http\Request $request){
- 
-	$contato = new App\Contato();
-	$contato->nome = $request->get('nome');
-    $contato->sobrenome = $request->get('sobrenome');
-	$contato->email = $request->get('email');
-
-	$contato->save();
- 
-	echo "Sua mensagem foi armazenada com sucesso! Código: " . $contato->id;
-});
+Route::get('/lista', 'ContatoController@lista');
