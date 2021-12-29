@@ -23,16 +23,17 @@ class ContatoController extends Controller
 		$contato->nome = $request->post('nome');
         $contato->sobrenome = $request->post('sobrenome');
 		$contato->email = $request->post('email');
+        $contato->aniversario = $request->post('niver');
  
 		$contato->save();
  
-		echo "Seus dados foram armazenados com sucesso! Aguarde seu presente ou visite nossa página para verificar se está tudo correto.";
+		return view('enviado');
     }
  
 	/**
      * Exibe uma lista com as mensagens cadastradas
      */
     public function lista(){
-    	return view('lista', array('contato' => Contato::all()));
+        return view('lista', array('contatos' => Contato::all()));
     }
 }
