@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parabéns!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
     <div>
@@ -95,9 +96,9 @@
                 </select>
             </div>    
         </fieldset>
-
-        <button name="submit">Enviar</button>
+        <button type="submit" class="btn btn-success">Enviar</button>
     </form>
 
+    <img src="https://images.vexels.com/media/users/3/75637/raw/a813faf64fad5a04e4dd21ca7d09f86f-feliz-aniversario-colorido-bolo.jpg" class="img-circle" alt="Responsive image" width="30%">
 </body>
 </html> 

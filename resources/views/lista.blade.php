@@ -11,11 +11,12 @@
  
 <div class="container">
  
-    <h1>Lista de contatos</h1>
+    <h1>Lista de aniversariantes</h1>
  
     <hr />
  
     <table class="table table-striped">
+    <tr class="active">
       <thead>
         <tr>
           <th>ID</th>
@@ -24,6 +25,7 @@
           <th>Email</th>
           <th>Aniversário</th>
         </tr>
+      </tr>
       </thead>
       <tbody>
         @foreach($contatos as $row)
